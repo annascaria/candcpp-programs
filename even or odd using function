@@ -1,0 +1,25 @@
+//print yes if number is even
+
+#include<stdio.h>
+#include<string.h>
+
+char* isEven(int input1)
+{
+	if(input1%2==0)
+	return "yes";
+	else
+	return "no";
+}
+
+void main()
+{
+	int input;
+	printf("Enter the input value: ");
+	scanf("%d", &input);
+	if(isEven(input) == "yes")
+	{	
+		printf("Yes\n");
+	}
+	else
+		printf("No\n");
+}
